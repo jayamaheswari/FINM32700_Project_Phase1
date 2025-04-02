@@ -1,4 +1,4 @@
-# # FINM32700_Project_Phase1
+# FINM32700_Project_Phase1
 High-Performance Linear Algebra Kernels
 
 ---
