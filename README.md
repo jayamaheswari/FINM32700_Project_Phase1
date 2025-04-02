@@ -7,6 +7,7 @@ High-Performance Linear Algebra Kernels
 - Aadi
 - Anand
 - Jaya
+- Keyi
 
 ---
 
