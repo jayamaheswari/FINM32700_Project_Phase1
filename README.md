@@ -4,10 +4,10 @@ High-Performance Linear Algebra Kernels
 ---
 
 ## Team Members
-- Aadi
-- Anand
-- Jaya
-- Keyi
+- Aadi Deshpande
+- Anand Nakhate
+- Jaya Maheswari
+- Keyi Wang
 
 ---
 
