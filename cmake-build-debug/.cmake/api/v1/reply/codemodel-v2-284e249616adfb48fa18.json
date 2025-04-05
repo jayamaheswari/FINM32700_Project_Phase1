@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "HighPerformanceLA",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "linalg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linalg-Debug-25fbaa11fac3709f5186.json",
+					"name" : "linalg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "phase2_1_benchmark_linalg_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-phase2_1_benchmark_linalg_test-Debug-1e23421b92fa24d6f74e.json",
+					"name" : "phase2_1_benchmark_linalg_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "phase2_2_cache_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-phase2_2_cache_test-Debug-ed11f6f3220fc3c63a0b.json",
+					"name" : "phase2_2_cache_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "phase2_3_alignment_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-phase2_3_alignment_test-Debug-b217d2982aa4f738f3a0.json",
+					"name" : "phase2_3_alignment_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "phase2_3_forced_intrinsic_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-phase2_3_forced_intrinsic_test-Debug-dd8cae8b9b635b21bc9e.json",
+					"name" : "phase2_3_forced_intrinsic_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "phase2_4_inline_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-phase2_4_inline_test-Debug-391642e069bb3bb82448.json",
+					"name" : "phase2_4_inline_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "phase2_6_optimization_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-phase2_6_optimization_test-Debug-4531184d4448ec961b31.json",
+					"name" : "phase2_6_optimization_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_linalg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_linalg-Debug-f703ddadd896ea452aca.json",
+					"name" : "test_linalg",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/anandtheerthanakhate/CLionProjects/FINM32700_Project_Phase1/cmake-build-debug",
+		"source" : "/Users/anandtheerthanakhate/CLionProjects/FINM32700_Project_Phase1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
