@@ -8,8 +8,16 @@
 #include <sys/sysctl.h>
 #include "linalg.hpp"
 
-struct CacheInfo { size_t l1; size_t l2; size_t l3; };
-struct Result { double mean; double stddev; };
+struct CacheInfo {
+    size_t l1;
+    size_t l2;
+    size_t l3;
+};
+
+struct Result {
+    double mean;
+    double stddev;
+};
 
 inline CacheInfo getCacheSizes() {
     int64_t l1dc=0,l2c=0,l3c=0; size_t sz=sizeof(int64_t);
@@ -22,7 +30,8 @@ inline CacheInfo getCacheSizes() {
 inline std::unique_ptr<double[]> makeRand(int r,int c,unsigned s){
     std::unique_ptr<double[]> p(new double[r*c]);
     std::mt19937_64 g(s); std::uniform_real_distribution<double>d(-1,1);
-    for(int i=0;i<r*c;i++) p[i]=d(g);
+    for(int i=0;i<r*c;i++)
+        p[i]=d(g);
     return p;
 }
 
@@ -50,7 +59,15 @@ inline Result benchMVCol(int r,int c){
         auto e=std::chrono::high_resolution_clock::now();
         t.push_back(std::chrono::duration<double,std::milli>(e-s).count());
     }
-    double sm=0; for(auto&v:t) sm+=v; double m=sm/t.size(),va=0; for(auto&v:t){double d=v-m;va+=d*d;} va/=t.size();
+    double sm=0;
+    for(auto&v:t)
+        sm+=v;
+    double m=sm/t.size(),va=0;
+    for(auto&v:t) {
+        double d=v-m;
+        va+=d*d;
+    }
+    va/=t.size();
     return {m,std::sqrt(va)};
 }
 
@@ -64,7 +81,15 @@ inline Result benchMMNaive(int n){
         auto e=std::chrono::high_resolution_clock::now();
         t.push_back(std::chrono::duration<double,std::milli>(e-s).count());
     }
-    double sm=0; for(auto&v:t) sm+=v; double m=sm/t.size(),va=0; for(auto&v:t){double d=v-m;va+=d*d;} va/=t.size();
+    double sm=0;
+    for(auto&v:t)
+        sm+=v;
+    double m=sm/t.size(),va=0;
+    for(auto&v:t) {
+        double d=v-m;
+        va+=d*d;
+    }
+    va/=t.size();
     return {m,std::sqrt(va)};
 }
 
@@ -79,7 +104,15 @@ inline Result benchMMTrans(int n){
         auto e=std::chrono::high_resolution_clock::now();
         t.push_back(std::chrono::duration<double,std::milli>(e-s).count());
     }
-    double sm=0; for(auto&v:t) sm+=v; double m=sm/t.size(),va=0; for(auto&v:t){double d=v-m;va+=d*d;} va/=t.size();
+    double sm=0;
+    for(auto&v:t)
+        sm+=v;
+    double m=sm/t.size(),va=0;
+    for(auto&v:t) {
+        double d=v-m;
+        va+=d*d;
+    }
+    va/=t.size();
     return {m,std::sqrt(va)};
 }
 
