@@ -32,6 +32,8 @@ Ans - Row-Major: Stores matrix elements row by row, commonly used in C++.
       Row-major storage benefits sequential row access patterns (good for row-wise traversal).
       Column-major storage is optimal for sequential column access but may result in cache misses for row-wise traversal.
    
+   Example: The cache locality analysis in section 2.2 shows that row-major storage outperforms column-major by approximately 1.3× for larger matrices, primarily due to better cache locality resulting from sequential row-wise traversal.
+   
 3. Describe how CPU caches work (L1, L2, L3) and explain the concepts of temporal and spatial locality. How did you try to exploit these concepts in your optimizations?
 
 Ans - L1 Cache: Fastest and smallest, located closest to the CPU core.
@@ -42,6 +44,8 @@ Ans - L1 Cache: Fastest and smallest, located closest to the CPU core.
       Temporal Locality: Reusing recently accessed data.
       Spatial Locality: Accessing adjacent data in memory to take advantage of cache line fetches.
       Matrix algorithms can benefit from loop reordering and blocking techniques to improve cache hits.
+      We implemented Reorder (IKJ), which improves performance by ensuring contiguous accumulation in matrix C, resulting in 7× faster execution for 256×256 matrices. This optimizes spatial locality by reusing data in the cache.
+      We also implemented Blocked/Tiled, which divides matrices A and B into cache-friendly blocks, reducing capacity misses and memory traffic, especially for large matrices.
    
 4. What is memory alignment, and why is it important for performance? Did you observe a significant performance difference between aligned and unaligned memory in your experiments? Explain your findings.
 
