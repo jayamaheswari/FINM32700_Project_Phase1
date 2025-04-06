@@ -1,4 +1,0 @@
-/Users/anandtheerthanakhate/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/anandtheerthanakhate/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja -G Ninja -S /Users/anandtheerthanakhate/CLionProjects/FINM32700_Project_Phase1 -B /Users/anandtheerthanakhate/CLionProjects/FINM32700_Project_Phase1/cmake-build-debug
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: /Users/anandtheerthanakhate/CLionProjects/FINM32700_Project_Phase1/cmake-build-debug
